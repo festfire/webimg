@@ -27,3 +27,5 @@ image url - POST /urlimg
 
 Sample output: 
 {"results": [{"confidence": "0.84632134", "bottomright": {"x": 929, "y": 693}, "label": "person", "topleft": {"x": 516, "y": 272}}, {"confidence": "0.49170035", "bottomright": {"x": 440, "y": 372}, "label": "car", "topleft": {"x": 50, "y": 179}}, {"confidence": "0.476661", "bottomright": {"x": 859, "y": 765}, "label": "car", "topleft": {"x": 22, "y": 190}}, {"confidence": "0.37287682", "bottomright": {"x": 1238, "y": 959}, "label": "car", "topleft": {"x": 145, "y": 498}}], "time": 1.1828856468200684}
+
+made by Stepan Moiseev, Denis Sokhach, Anton Skorenko
