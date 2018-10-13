@@ -27,33 +27,24 @@
 	<script type="text/javascript">
 		//alert(processTags(["oven", "toaster", "person", "person", "person", "person"]));
 		//alert(processTags(parseJSON()));
-
 		var label;
 		var input;
-
 		window.onload = function() {
 			var img = document.getElementById('image');
-
 			/*img.onload = function() {
 				var canvas = document.createElement('canvas');
 				canvas.width = img.width;
 				canvas.height = img.height;
 				canvas.getContext('2d').drawImage(img, 0, 0, img.width, img.height);
-
 				var pixelData = canvas.getContext('2d').getImageData(1, 1, 1, 1).data;
-
 				alert(pixelData);
 			};*/
-
 			label = document.getElementById("filename");
 			input = document.getElementById("exampleInputFile");
-
 			input.addEventListener("change", modifyLabel, false);
 			//document.getElementById("sendButton").addEventListener("click", sendImage, false);
 			document.getElementById("sendURL").addEventListener("click", sendURL, false);
-
 		}
-
 		function modifyLabel() {
 			var arr = input.value.split("\\");
 			//label.value = arr[arr.length-1];
@@ -65,16 +56,22 @@
 	<div class="container-fluid">
 		<div class="row short">
 			<div class="col" id='short-left'>
-				<form>
-					<div class="form-group">
-						<input type="text" id="filename" value="Имя файла" disabled class="form-control">
-						<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" >
-    					<label for="exampleInputFile" class="btn btn-outline-success">
-						    Выбрать файл
-						</label>
-    					<!--<small id="fileHelp" class="form-text text-muted">или перетащите его сюда</small>-->
-  					</div>
-				</form>
+				<div>
+					<form>
+						<div class="form-group" id='sl'>
+							<div id='nenado'>
+								<input type="text" id="filename" value="Имя файла" disabled class="form-control">
+								<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" >
+							</div>
+							<div>
+    							<label for="exampleInputFile" class="btn btn-info">
+								    Выбрать файл
+								</label>
+							</div>
+    						<!--<small id="fileHelp" class="form-text text-muted">или перетащите его сюда</small>-->
+  						</div>
+					</form>
+				</div>
 			
 			</div>
 			<div class="col" id='short-right'>
@@ -88,13 +85,15 @@
 						</form>
 					</div>
 					<div id='mybutton'>
-						<input class="btn btn-outline-success" type="button" value="Искать" id="sendURL">
+						<input class="btn btn-info" type="button" value="Отправить" id="sendURL">
 					</div>
 				</div>
 				<div id='api'>
-					<a class="btn btn-primary" id='api-btn' href="#" role="button">
-						API
-					</a>
+					<div>
+						<a class="btn btn-outline-info" id='api-btn' href="https://github.com/festfire/webimg/blob/master/README.md" target="_blank" role="button">
+							API
+						</a>
+					</div>
 				</div>
 
 
@@ -117,4 +116,4 @@
 		</div>
 	</div>
 </body>
-</html
+</html>
