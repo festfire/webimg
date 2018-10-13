@@ -14,7 +14,7 @@ import cv2
 from darkflow.net.build import TFNet
 
 serv_addr = '10.142.0.4'
-options = {"model": "/home/user/darkflow/cfg/yolo.cfg", "load": "/home/user/darkflow/bin/yolov2.weights", "threshold": 0.3, "gpu": 1.0}
+options = {"model": "/home/festfire/darkflow/cfg/yolo.cfg", "load": "/home/festfire/darkflow/bin/yolov2.weights", "threshold": 0.3, "gpu": 1.0}
 tfnet = TFNet(options)
 
 def magic(img_file):
@@ -65,9 +65,10 @@ def do_upload_img():
     upload = request.files.get('upload')
     return magic(BytesIO(upload.file.read()))
 
-@route('/urlimg')
+@route('/urlimg', method='POST')
 def do_url_img():
     url = request.forms.get('url')
+    print(url)
     r = requests.get(url)
     return magic(BytesIO(r.content))
 

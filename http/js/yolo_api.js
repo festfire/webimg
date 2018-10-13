@@ -36,7 +36,7 @@ function sendURL() {
 
 	$.ajax({
 	  method: "POST",
-	  url: "urlimg",
+	  url: "/urlimg",
 	  data: { url: document.getElementById("exampleInputEmail1").value },
 	  success: function (data) {
 	  	processResponse(data);
