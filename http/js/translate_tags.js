@@ -28,7 +28,11 @@ function translateTag(tag, lines = false) {
 				return "машина";
 			case "motorcycle":
 				return "мотоцикл";
+			case "motorbike":
+				return "мотоцикл";
 			case "airplane":
+				return "самолёт";
+			case "aeroplane":
 				return "самолёт";
 			case "bus":
 				return "автобус";
@@ -132,16 +136,26 @@ function translateTag(tag, lines = false) {
 				return "стул";
 			case "couch":
 				return "кушетка";
+			case "sofa":
+				return "кушетка";
 			case "potted plant":
+				return "растение";
+			case "pottedplant":
 				return "растение";
 			case "bed":
 				return "кровать";
 			case "dining table":
 				return "стол";
+			case "diningtable":
+				return "стол";
 			case "toilet":
 				return "туалет";
 
 			case "tv":
+				return "телевизор";
+			case "tvmonitor":
+				return "телевизор";
+			case "tv monitor":
 				return "телевизор";
 			case "laptop":
 				return "ноутбук";

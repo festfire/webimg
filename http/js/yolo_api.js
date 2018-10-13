@@ -15,6 +15,10 @@ function sendImage() {
 
 	fd.append('upload', $input.prop('files')[0]);
 
+	// loading
+	document.getElementById("tall-right").innerHTML = '<img src="2.gif" class="loading_gif" />';
+
+	// ajax
 	$.ajax({
 	  method: "POST",
 	  url: "/uploadimg",
@@ -34,6 +38,10 @@ function sendURL() {
 	// show image
 	$('#image').attr('src', $('#exampleInputEmail1').val());
 
+	// loading
+	document.getElementById("tall-right").innerHTML = '<img src="2.gif" class="loading_gif" />';
+
+	// ajax
 	$.ajax({
 	  method: "POST",
 	  url: "/urlimg",
@@ -45,6 +53,8 @@ function sendURL() {
 	  	processResponse('{"time": 1.3483521938323975, "results": [{"bottomright": {"y": 1770, "x": 1115}, "label": "person", "topleft": {"y": 1041, "x": 905}, "confidence": "0.74480695"}, {"bottomright": {"y": 1802, "x": 1266}, "label": "person", "topleft": {"y": 1057, "x": 1003}, "confidence": "0.5808618"}]}');
 	  },
 	})
+
+
 }
 
 function processResponse(data='{"time": 1.3483521938323975, "results": [{"bottomright": {"y": 1770, "x": 1115}, "label": "person", "topleft": {"y": 1041, "x": 905}, "confidence": "0.74480695"}, {"bottomright": {"y": 1802, "x": 1266}, "label": "person", "topleft": {"y": 1057, "x": 1003}, "confidence": "0.5808618"}]}') {
@@ -55,7 +65,7 @@ function processResponse(data='{"time": 1.3483521938323975, "results": [{"bottom
 
 	tags = processTags(tags);
 
-	document.getElementById("tall-right").innerHTML = '<b class="tag">' + tags.join('</b><b class="tag">') + '</b>';
+	document.getElementById("tall-right").innerHTML = '<b class="tag">#' + tags.join('</b><b class="tag">#') + '</b>';
 }
 
 function parseJSON(string) {
