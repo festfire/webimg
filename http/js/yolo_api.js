@@ -17,7 +17,7 @@ function sendImage() {
 
 	$.ajax({
 	  method: "POST",
-	  url: "http://35.237.162.217/index.html",
+	  url: "/uploadimg",
 	  data: fd,
 	  processData: false,
 	  contentType: false,
@@ -36,7 +36,7 @@ function sendURL() {
 
 	$.ajax({
 	  method: "POST",
-	  url: "http://35.237.162.217/index.html",
+	  url: "urlimg",
 	  data: { url: document.getElementById("exampleInputEmail1").value },
 	  success: function (data) {
 	  	processResponse(data);
