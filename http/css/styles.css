@@ -17,14 +17,20 @@ body {
 
 #short-left {
 	background: #424b5f;
+	padding-right: 0px;
+	
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 #short-right {
 	background: #4f5a6e;
 	display: flex;
-	justify-content: flex-end;
-
+	justify-content: flex-end;	
 	
+    padding-left: 0px;
 }
 
 .tall {
@@ -34,34 +40,29 @@ body {
 #tall-left {
 	background: #eef1f4;
 	padding: 10px;
+	display: flex;
+    align-items: center;
 }
 
 #tall-right {
-	background: white;
-	
+	background: white;	
 	padding: 10px;
 	
 }
 
-#api {
-	display: block;
-	width: 20vh;
-	height: 20vh;
-	
+#api {	
+	width: 15vh;	
 	margin-right: -15px;
 	background: #4f5a6e;
 	border-left: 2px solid #424b5f;
 	text-align: center;
-	
+	display: flex;
+	justify-content: center;
 
 }
 
 #api-btn {
-	font-size: 2rem;
-	background: #65c178;
-	border: none;	
-	padding: .375rem 1.20rem;
-	vertical-align: middle;
+	
 }
 
 .tag {
@@ -94,8 +95,39 @@ body {
 
 #myinput {
 	padding: 10px;
+	height: 38px;
 }
 
 #mybutton {
 	padding: 10px;
+
 }
+
+#api div {
+	margin: auto;
+}
+
+#sl {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+#nenado {
+	display: none;
+}
+
+#sl div label {
+	margin-bottom: 0px;
+}
+
+#exampleInputEmail1::-webkit-input-placeholder {
+	background-color: #424b5f;
+}
+
+.form-control { 
+	background-color: #424b5f;
+	border: 1px solid #424b5f;
+	color: #a7b3cb;
+}
+
