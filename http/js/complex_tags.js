@@ -28,6 +28,10 @@ var categories = [
 	{ count: 3, countDuplicates: true, hidden: false, name: "цивилизация", tags: ["техника"] },
 	{ count: 1, countDuplicates: false, hidden: true, name: "толпа или улица", tags: ["толпа", "улица"] },
 	{ count: 2, countDuplicates: false, hidden: false, name: "дорожное движение", tags: ["толпа или улица", "транспорт"] },
+	{ count: 3, countDuplicates: true, hidden: false, name: "багаж", tags: ["чемодан"] },
+	{ count: 2, countDuplicates: false, hidden: false, name: "пассажиры", tags: ["автобус", "люди"] },
+	{ count: 2, countDuplicates: false, hidden: false, name: "веселье", tags: ["человек", "пицца"] },
+	{ count: 12, countDuplicates: true, hidden: false, name: "пробка", tags: ["машина"] },
 ]
 
 function getCategories(tags) {
