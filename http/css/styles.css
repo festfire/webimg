@@ -1,0 +1,101 @@
+#exampleInputFile {
+	display:none;
+}
+
+
+
+
+
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.short {
+	height: 15vh;
+}
+
+#short-left {
+	background: #424b5f;
+}
+
+#short-right {
+	background: #4f5a6e;
+	display: flex;
+	justify-content: flex-end;
+
+	
+}
+
+.tall {
+	height: 85vh;
+}
+
+#tall-left {
+	background: #eef1f4;
+	padding: 10px;
+}
+
+#tall-right {
+	background: white;
+	
+	padding: 10px;
+	
+}
+
+#api {
+	display: block;
+	width: 20vh;
+	height: 20vh;
+	
+	margin-right: -15px;
+	background: #4f5a6e;
+	border-left: 2px solid #424b5f;
+	text-align: center;
+	
+
+}
+
+#api-btn {
+	font-size: 2rem;
+	background: #65c178;
+	border: none;	
+	padding: .375rem 1.20rem;
+	vertical-align: middle;
+}
+
+.tag {
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	border-radius: .25rem;
+	font-size: 1rem;
+	color: grey;
+	background: #eef1f4;	
+	
+}
+
+#img-container img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: .25rem;
+}
+
+#img-container {
+	padding: 10px;
+}
+
+#srl {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+}
+
+#myinput {
+	padding: 10px;
+}
+
+#mybutton {
+	padding: 10px;
+}
