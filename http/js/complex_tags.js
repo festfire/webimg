@@ -31,7 +31,8 @@ var categories = [
 	{ count: 3, countDuplicates: true, hidden: false, name: "багаж", tags: ["чемодан"] },
 	{ count: 2, countDuplicates: false, hidden: false, name: "пассажиры", tags: ["автобус", "люди"] },
 	{ count: 2, countDuplicates: false, hidden: false, name: "веселье", tags: ["человек", "пицца"] },
-	{ count: 12, countDuplicates: true, hidden: false, name: "пробка", tags: ["машина"] },
+	{ count: 10, countDuplicates: true, hidden: true, name: "дохрена машин", tags: ["машина"] },
+	{ count: 2, countDuplicates: false, hidden: false, name: "пробка", tags: ["дохрена машин", "светофор"] },
 ]
 
 function getCategories(tags) {
