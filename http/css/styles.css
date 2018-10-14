@@ -9,10 +9,11 @@
 body {
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
+	height: 100%;
 }
 
 .short {
-	height: 15vh;
+	height: 100px;
 }
 
 #short-left {
@@ -22,6 +23,7 @@ body {
 	display: flex;
     align-items: center;
     justify-content: center;
+    border-right: 1px solid #424b5f;
     
 }
 
@@ -34,27 +36,29 @@ body {
 }
 
 .tall {
-	height: 85vh;
+	height: calc(100vh - 100px);
 }
 
 #tall-left {
 	background: #eef1f4;
-	padding: 10px;
+	padding: 20px;
 	display: flex;
     align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0,0,0,.1);
 }
 
 #tall-right {
 	background: white;	
-	padding: 10px;
+	padding: 20px;
 	
 }
 
 #api {	
-	width: 15vh;	
+	width: 100px;	
 	margin-right: -15px;
 	background: #4f5a6e;
-	border-left: 2px solid #424b5f;
+	border-left: 1px solid #424b5f;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -67,12 +71,13 @@ body {
 
 .tag {
 	padding: 10px;
-	margin: 10px;
+	margin: 7.5px 10px;
 	display: inline-block;
 	border-radius: .25rem;
-	font-size: 1rem;
-	color: grey;
-	background: #eef1f4;	
+	font-size: 1.2rem;
+	color: #333;
+	background: #eef1f4;
+	border: 1px solid rgba(0,0,0,.1);	
 	
 }
 
@@ -121,8 +126,57 @@ body {
 	margin-bottom: 0px;
 }
 
+.btn-info {
+	background: #1bb76e;
+	border-color: #1bb76e;
+}
+
+.btn-info:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #26de88;
+    border-color: #26de88;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #26de88;
+    border-color: #26de88;
+}
+
+.btn-info:focus {
+    box-shadow: none;
+}
+
+.btn-outline-info {
+    color: #26de88;
+    border-color: #26de88;
+}
+
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: #1bb76e;
+    border-color: #1bb76e;
+}
+
+.btn-outline-info:not(:disabled):not(.disabled):active {
+    background-color: #1bb76e;
+    border-color: #1bb76e;
+}
+
+.btn-outline-info:focus {
+    box-shadow: none;
+}
+
+.form-control:focus {
+    color: #eef1f4;
+    background-color: #2c3240;
+    border-color: #2c3240;
+    outline: 0;
+    box-shadow: none;
+}
+
 #exampleInputEmail1::-webkit-input-placeholder {
-	background-color: #424b5f;
+	
 }
 
 .form-control { 
@@ -130,4 +184,3 @@ body {
 	border: 1px solid #424b5f;
 	color: #a7b3cb;
 }
-
